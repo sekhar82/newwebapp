@@ -1,0 +1,22 @@
+.bg-v-green-l {
+    background-color: #B0D52F;
+}
+
+.border-v-green-l {
+    border: 3px solid #B0D52F;
+}
+.icon-str {
+    font-size: 150px;
+    width: 150px;
+    height: 150px;
+}
+.cd-stl{
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.cd-stl:hover .txt-effect{
+background-color: #B0D52F;
+color: white;
+border-radius: 0px 0px 20px 20px;
+}

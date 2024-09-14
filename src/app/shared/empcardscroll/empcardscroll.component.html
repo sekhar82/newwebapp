@@ -1,0 +1,39 @@
+<swiper [slidesPerView]="1" [spaceBetween]="30" [pagination]="{
+        clickable: true
+      }" [autoplay]="{
+          delay: 2000,
+          disableOnInteraction: false
+        }" [navigation]="true"
+        [breakpoints]="{
+            '768': {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            '1080': {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            '1360': {
+              slidesPerView: 4,
+              spaceBetween: 30
+            }
+          }"
+        
+         class="mySwiper">
+    <ng-template swiperSlide *ngFor="let card of cards" class="mb-5 mt-3">
+        <div class="card w-100 bg-white">
+            <div class="card-body bg-v-green-l rounded-top">
+                <h5 class="card-title text-center text-white">{{card.name}}</h5>
+                <h6 class="card-subtitle mb-2 text-white text-center" style="font-size: 14px;">{{card.degn}}</h6>
+            </div>
+            <div class="card-body text-dark">
+                <div class="d-flex justify-content-around px-5">
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                    <i class="fa-brands fa-square-x-twitter fs-4"></i>
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                    <i class="fa-brands fa-linkedin fs-4"></i>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</swiper>

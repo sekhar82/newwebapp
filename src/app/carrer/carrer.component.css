@@ -1,0 +1,32 @@
+.bg-img-res {
+    background-image: url(/assets/Frame\ 202.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.profilepic {
+    background-image: url(/assets/54.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+
+.profilepic2 {
+    background-image: url(/assets/55.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+
+.v-green-l {
+    color: #B0D52F;
+}
+
+.bg-v-green-l {
+    background-color: #B0D52F;
+}

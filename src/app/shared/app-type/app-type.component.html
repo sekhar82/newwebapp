@@ -1,0 +1,43 @@
+<swiper [slidesPerView]="1" [spaceBetween]="30" [pagination]="{
+    clickable: true
+  }" [autoplay]="{
+      delay: 2000,
+      disableOnInteraction: false
+    }" [navigation]="true" [breakpoints]="{
+        '768': {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        '1080': {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        '1360': {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+      }" class="mySwiper">
+    <ng-template swiperSlide *ngFor="let elm of cards;let i = index" class="mb-5 mt-3 bg-light">
+        <div class="w-100 card-1 cur-poiter my-2" [ngClass]="{'mt-5':i%2==1}">
+            <div class="mx-2" style="height: 450px;">
+                <div class="d-flex justify-content-center">
+                    <div class="rounded-circle text-center d-flex justify-content-center align-items-center"
+                        style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                        <div class="text-white fw-bolder">0{{i+1}}</div>
+                    </div>
+                </div>
+                <div class="triangle w-100">
+                    <div class="d-flex justify-content-center mt-3">
+                        <img [src]="elm.image" alt="" style="max-width: 100px;max-height: 50px !important;">
+                    </div>
+                    <p class="fw-bold pt-2 text-center">{{elm.title}}</p>
+                    <p class="text-muted text-center p-3" style="font-size: 13px;">{{elm.description}}</p>
+                    <button type="button" class="btn btn-outline-success">Get a qoute</button>
+                </div>
+
+            </div>
+        </div>
+        <div>
+        </div>
+    </ng-template>
+</swiper>

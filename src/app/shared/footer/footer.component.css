@@ -1,0 +1,19 @@
+.v-green-l {
+  color: #B0D52F;
+}
+
+.v-green-m {
+  color: #5CBB42;
+}
+
+.verticalLine {
+  background-color: white;
+  padding-left: 2px;
+  width: 2px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.cur-poiter {
+  cursor: pointer;
+}

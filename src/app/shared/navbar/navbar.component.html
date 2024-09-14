@@ -1,0 +1,213 @@
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <div class="d-flex">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img class="ms-2 cur-poiter" routerLink='/dashboard' src="assets/VALIANT EDGE fi.png" alt="" height="50px">
+    </div>
+    <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <div class="nav-link fw-bold cur-poiter px-3 text-dark" routerLink='/dashboard' routerLinkActive="v-green-m">
+            Home</div>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="nav-link fw-bold cur-poiter px-3 text-dark dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false"
+            [ngClass]="{'text-dark':url!='about' && url!='carrer','v-green-m':url=='about' || url=='carrer'}">
+            Organization</div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item dd-menu-list" routerLink='/about'>About Us</a></li>
+            <!-- <li><a class="dropdown-item dd-menu-list" routerLink='/carrer'>Careers</a></li> -->
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown-toggle nav-link fw-bold cur-poiter px-3" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" aria-expanded="false"
+            [ngClass]="{'text-dark':url!='services','v-green-m':url=='services'}">
+            Expertise
+          </div>
+          <ul class="dropdown-menu" id="main-dd">
+            <li>
+              <div class="dropend px-3 py-1">
+                <div class="dropdown-toggle drop-list " data-bs-toggle="dropdown" aria-expanded="false">
+                  <span style="margin-right: 57px;">Services</span>
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/webdevelopment"
+                      (click)="closedd()">Website Development</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/softwaredevelopment"
+                      (click)="closedd()">Software Development</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/mobileappdevelopment"
+                      (click)="closedd()">Mobile App Development</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/ecomdevelopment"
+                      (click)="closedd()">E Commerce Development</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/cloudesevices"
+                      (click)="closedd()">Cloud Services</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/uiuxdesign"
+                      (click)="closedd()">UI/UX Design</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropend px-3 py-1">
+                <div class="dropdown-toggle drop-list" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span style="margin-right: 45px;">Marketing</span>
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/digitalmarketing"
+                      (click)="closedd()">Digital Marketing</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/enterpriseseo"
+                      (click)="closedd()">Enterprise SEO</div>
+                  </li>
+                  <li>
+                    <div class="px-3 py-1 dd-menu-list text-nowrap" routerLink="/services/socmediamarketing"
+                      (click)="closedd()">Social Media Marketing</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <div class="dropdown megamenu">
+            <div class="nav-link fw-bold cur-poiter px-3 dropdown-toggle" data-bs-auto-close="outside" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              [ngClass]="{'text-dark':url!='services','v-green-m':url=='services'}">Service
+            </div>
+            <div class="dropdown-menu" id="ddMenu">
+              <div class="container">
+                <div class="row bg-white rounded-4 border shadow" style="min-height: 460px;">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item active mt-3 px-2 d-flex justify-content-between cur-poiter"
+                        data-bs-toggle="pill" data-bs-target="#pills-service" role="tab" aria-controls="pills-service"
+                        aria-selected="true">
+                        <div>Services</div>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </li>
+                      <li class="list-group-item mt-3 px-2 d-flex justify-content-between cur-poiter"
+                        data-bs-toggle="pill" data-bs-target="#pills-marketing" role="tab"
+                        aria-controls="pills-marketing" aria-selected="true">
+                        <div>Marketing</div>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </li>
+                      <li class="list-group-item mt-3 px-2 d-flex justify-content-between cur-poiter"
+                        data-bs-toggle="pill" data-bs-target="#pills-cloude" role="tab" aria-controls="pills-cloude"
+                        aria-selected="true">
+                        <div>Cloud Services</div>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </li>
+                      <li class="list-group-item mt-3 px-2 d-flex justify-content-between cur-poiter"
+                        style="border-bottom: 1px solid #ccc;" data-bs-toggle="pill" data-bs-target="#pills-techno"
+                        role="tab" aria-controls="pills-techno" aria-selected="true">
+                        <div>Technologies</div>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-service" role="tabpanel"
+                        aria-labelledby="pills-service-tab" tabindex="0">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2" *ngFor="let elm of service">
+                            <div class="card w-100 h-100 shadow card-1 cur-poiter" (click)="navigateTo(elm.url)">
+                              <img [src]="elm.img" alt="" class="card-img-top img-fluid" style="max-height: 140px;">
+                              <div class="position-absolute w-100 text-white opacity-100 text-center"
+                                style="background-image: linear-gradient(#98CE34, #3CB24A);bottom: 0;">
+                                {{elm.name}}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-marketing" role="tabpanel"
+                        aria-labelledby="pills-marketing-tab" tabindex="0">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2" *ngFor="let elm of marketing">
+                            <div class="card w-100 shadow card-1">
+                              <img [src]="elm.img" alt="" class="card-img-top img-fluid" style="max-height: 140px;">
+                              <div class="position-absolute w-100 text-white opacity-100 text-center"
+                                style="background-image: linear-gradient(#98CE34, #3CB24A);bottom: 0;">
+                                {{elm.name}}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-cloude" role="tabpanel" aria-labelledby="pills-cloude-tab"
+                        tabindex="0">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2" *ngFor="let elm of cloude">
+                            <div class="card w-100 shadow card-1">
+                              <img [src]="elm.img" alt="" class="card-img-top img-fluid" style="max-height: 140px;">
+                              <div class="position-absolute w-100 text-white opacity-100 text-center"
+                                style="background-image: linear-gradient(#98CE34, #3CB24A);bottom: 0;">
+                                {{elm.name}}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-techno" role="tabpanel" aria-labelledby="pills-techno-tab"
+                        tabindex="0">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2" *ngFor="let elm of technology">
+                            <div class="card w-100 shadow card-1" style="height: 140px;">
+                              <img [src]="elm.img" alt="" class="card-img-top img-fluid" style="max-height: 140px;">
+                              <div class="position-absolute w-100 text-white opacity-100 text-center"
+                                style="background-image: linear-gradient(#98CE34, #3CB24A);bottom: 0;">
+                                {{elm.name}}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li> -->
+        <!-- <li class="nav-item">
+          <div class="nav-link fw-bold cur-poiter px-3" [ngClass]="{'text-dark':true,'v-green-m':false}">Products</div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link fw-bold cur-poiter px-3" [ngClass]="{'text-dark':true,'v-green-m':false}">Clients</div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link fw-bold cur-poiter px-3" [ngClass]="{'text-dark':true,'v-green-m':false}">Traning</div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link fw-bold cur-poiter px-3 text-dark" routerLink='/carrer' routerLinkActive="v-green-m">Carrer</div>
+        </li> -->
+        <li class="nav-item">
+          <div class="nav-link fw-bold cur-poiter px-3 text-dark" routerLink='/contact' routerLinkActive="v-green-m">
+            Contact</div>
+        </li>
+        <li class="nav-item invisible">
+          <div class="nav-link">jgvjgfjfjgjgjgj</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

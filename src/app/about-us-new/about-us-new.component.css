@@ -1,0 +1,14 @@
+.bg-img-res {
+  background-image: url(/assets/Frame\ 201.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.v-green-l {
+  color: #B0D52F;
+}
+
+.bg-v-green-l {
+  background-color: #B0D52F;
+}

@@ -1,0 +1,92 @@
+<!-- <<===================== GET IN TOUACH MODAL ==========================>> -->
+<div class="modal fade" id="getInTouch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="commonModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="commonModalLabel">Get In Touch</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3" id="form-2" [formGroup]="contactForm" (ngSubmit)="contactFormSubmit()">
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" formControlName="firstName" placeholder="First Name*">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name*">
+                    </div>
+                    <div class="col-12">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Email Address*">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" formControlName="phone" placeholder="Phone Number*">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" formControlName="location" placeholder="Location">
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-bars"></i></span>
+                            <select class="form-select" formControlName="requestFor" aria-label="Default select example"
+                                aria-describedby="basic-addon1">
+                                <option value="" selected hidden>What Services you want to opt?*</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Software Development">Software Development</option>
+                                <option value="Mobile Application Development">Mobile Application Development</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Cloude Services">Cloude Services</option>
+                                <option value="Enterprise SEO">Enterprise SEO</option>
+                                <option value="Social Media Marketing">Social Media Marketing</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" formControlName="message" placeholder="Message"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="reset" form="form-2" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="form-2" [disabled]="contactForm.invalid" class="btn btn-primary"
+                    data-bs-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <<===================== BOOK A CALL MODAL ==========================>> -->
+<div class="modal fade" id="bookACall" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="bookACallLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="bookACallLabel">Book a call</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3" id="form-3" [formGroup]="bookForm" (ngSubmit)="bookSedule()">
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" formControlName="name" placeholder="Contact Name*">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" formControlName="phone" placeholder="Phone Number*">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Email Address*">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input [type]="toggleDateAndText?'datetime-local':'text'" (focus)="toggleDateAndText = true"
+                            (blur)="val.value.length?'':toggleDateAndText = false" #val class="form-control"
+                            formControlName="sceduleTime" placeholder="Scedule Date Time*">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="reset" form="form-3" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="form-3" [disabled]="bookForm.invalid" class="btn btn-primary"
+                    data-bs-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,132 @@
+<div class="container">
+    <div class="rounded-4 shadow" style="background-image: linear-gradient(to bottom right, #f9f9fa, #fff);">
+        <div class="row flex-sm-row-reverse py-3">
+            <div class="col-sm-12 col-md-4 row justify-content-center">
+                <!-- <div class="col-10 col-sm-10 col-md-8"> -->
+                <img src="assets/vecteezy_illustration-isometric-concept-safety-of-online-shopping-in_5638074 [Converted] 1 (1).png"
+                    class="img-fluid " alt="">
+                <!-- </div> -->
+            </div>
+            <div class="col-sm-12 col-md-8 row justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="ms-3">
+                        <p class="fs-1 mb-2 fw-bold">Digital Marketing</p>
+                        <p class="pb-3 text-muted">Spark your business to a new peak with our digital
+                            marketing services and experience consulting.</p>
+                        <button class="btn btn-lg bg-v-green-l rounded-0 border border-v-green-l fw-bold"
+                            data-bs-toggle="modal" data-bs-target="#getInTouch">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="my-5 px-3">
+        <p class="text-center fs-2 fw-bold">Marketing Strategy that works in REAL!</p>
+        <p class="text-center mb-0 text-muted">No more bookish strategies or fake promises!</p>
+        <p class="text-center mt-0 text-muted">Transparent & proven methodologies for skyrocketing your business in no time!
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-2" *ngFor="let elm of cards">
+            <div class="card w-100 card-1 shadow cur-poiter h-100">
+                <div class="card-body mx-2">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center"
+                        style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                        <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                    </div>
+                    <p class="fw-bold pt-2">{{elm.name}}</p>
+                    <p style="font-size: 13px;">{{elm.description}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pt-2 mt-5 bg-light">
+    <div class="my-5 pb-3">
+        <p class="text-center fs-2 fw-bold">How to streamline a marketing strategy for an enterprise?</p>
+        <p class="text-center text-muted">Is your marketing strategy aligned to your business? If not, you need to align
+            it right away!
+            Misaligned marketing strategies can stop you from progress in business.</p>
+    </div>
+    <div class="row justify-content-around mt-5">
+        <div class="col-sm-12 col-md-5 p-5">
+            <div class="rounded w-100 h-100" style="background-color: #eee;">
+                <div class="d-flex justify-content-center">
+                    <div class="rounded-circle position-absolute" style="background-image: url(assets/gold-silver-chess-chess-board-game-business-metaphor-leadership-concept\ 1.png);
+                    height: 150px;width: 150px;margin-top: -80px;background-size: cover;transform: scale(1,1);">
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="fw-bold mt-5 text-center">Crafting Strategy</p>
+                    <p style="font-size: 13px;text-align: center;">We design a Digital Marketing strategy that aligns
+                        with your
+                        business' vision and execute the same after defining your
+                        brand goal, messaging tone, communication channels,
+                        and buyers' personal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-5 p-5">
+            <div class="rounded w-100 h-100" style="background-color: #eee;">
+                <div class="d-flex justify-content-center">
+                    <div class="rounded-circle position-absolute" style="background-image: url(assets/gold-silver-chess-chess-board-game-business-metaphor-leadership-concept\ 1\ \(1\).png);
+                    height: 150px;width: 150px;margin-top: -80px;background-size: cover;transform: scale(1,1);">
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="fw-bold mt-5 text-center">Launch Checklist</p>
+                    <p style="font-size: 13px;text-align: center;">We design a Digital Marketing strategy that aligns
+                        with your
+                        business' vision and execute the same after defining your
+                        brand goal, messaging tone, communication channels, and
+                        buyers' personal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-v-green-l mt-5">
+    <div class="container py-5">
+        <div class="text-center fs-2 text-white">Talk to us today for a consultation?</div>
+        <div class="d-flex justify-content-center mt-4">
+            <button class="shadow btn btn-md btn-white bg-white" data-bs-toggle="modal" data-bs-target="#getInTouch">
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                <span>Get in Touch</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="my-5 px-3">
+        <p class="text-center fs-2 fw-bold">A risk free business analysis</p>
+        <p class="text-center text-muted">A single false step can knock your business out of market. <br>
+            If you want to shield your business against such risks, risk-free business analysis is a must!</p>
+    </div>
+</div>
+<div class="container mb-5">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" *ngFor="let elm of cards1;let i=index">
+            <div class="card w-100 card-1 shadow cur-poiter my-2" [ngClass]="{'mt-5':i%2==1}">
+                <div class="card-body mx-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                            <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                        </div>
+                    </div>
+                    <p class="fw-bold pt-2 text-center">{{elm.name}}</p>
+                    <p class="text-muted text-center" style="font-size: 13px;">{{elm.description}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-lets-talk-form [isBgRequired]="true"></app-lets-talk-form>
+<app-book-call></app-book-call>

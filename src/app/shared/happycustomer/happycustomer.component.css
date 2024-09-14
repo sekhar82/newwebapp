@@ -1,0 +1,35 @@
+  .bg-v-green-l {
+    background-color: #B0D52F;
+  }
+
+
+  @import "~swiper/css";
+  @import "~swiper/css/effect-coverflow";
+  @import "~swiper/css/pagination";
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 190x;
+  }
+
+  /* .swiper-slide-active .card-customer {
+    scale: 2;
+  } */
+
+  .swiper-slide-active .card-focus {
+    background-color: #B0D52F;
+    color: white;
+  }
+
+  .swiper-slide .card {
+    display: block;
+    width: 100%;
+  }

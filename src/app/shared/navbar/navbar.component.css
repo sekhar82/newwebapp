@@ -1,0 +1,46 @@
+.v-green-m{
+    color: #5CBB42 !important;
+  }
+  .cur-poiter{
+    cursor: pointer;
+  }
+
+  .megamenu {
+    position: static;
+    margin-left: auto;
+  }
+  
+  .megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%;
+  }
+  .list-group .active {
+    background-color: #fff;
+    color: #5CBB42;
+    border-top: transparent;
+    border-bottom: 1px solid #ccc;
+  }
+  .card-1 :hover {
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 0.3;
+    /* animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)  */
+    /* transition: 0.3s; */
+}
+.drop-list{
+  color: black;
+}
+.drop-list:hover{
+  color: #5CBB42;
+  cursor: pointer;
+}
+.dd-menu-list{
+  color: black;
+}
+.dd-menu-list:hover{
+  background-color: #5CBB42;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+<!-- <div class="container-fluid">
+            <div class="w-100">
+                <div class="row justify-content-center">
+                    <div class="col-7 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="z-index: 1200;">
+                        <div class="card w-100 bg-v-green-l shadow" style="z-index: 1200; min-height: 250px;">
+                            <i class="fa-solid fa-quote-left text-center mt-3" style="font-size: 50px; color: #ccc;"></i>
+                            <div class="card-body bg-v-green-l rounded-top text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe? Eveniet distinctio
+                                quia adipisci voluptatum tempore. Temporibus natus tempore repellendus doloremque sit
+                                perspiciatis culpa eligendi, illum dolores. Minus, beatae veritatis.
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center" style="margin-top: -33px;">
+                            <div class="d-flex align-items-center justify-content-center"> 
+                                <img src="assets/42.png" class="bg-dark rounded-circle shadow" style="height: 66px;width: 66px;z-index: 1202;" alt="">
+                            </div>
+                        </div>
+                        <div style="font-size: 12px;font-weight: bold;text-align: center; margin-top: 10px;">Lorem Lorem</div>
+                        <div style="font-size: 12px;font-weight: 400;text-align: center;">Lorem Lorem Lorem</div>
+                    </div>
+                </div>
+            </div>
+        <div class="row justify-content-between justify-content-sm-around justify-content-md-around justify-content-lg-around justify-content-xl-around" style="z-index: 1100;margin-top: -200px;">
+            <div class="col-5 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                <div class="card w-100 shadow" style="min-height: 200px;">
+                    <i class="fa-solid fa-quote-left text-center mt-3" style="font-size: 45px; color: #ccc;"></i>
+                    <div class="card-body rounded-top" style="font-size: 12px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum quasi ab quidem
+                        reprehenderit eaque, veritatis facere quo rem recusandae vero reiciendis quos distinctio quas
+                        voluptas autem et quaerat! Perspiciatis.
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center" style="margin-top: -32px;">
+                    <div class="d-flex align-items-center justify-content-center"> 
+                        <img src="assets/42.png" class="bg-dark rounded-circle shadow" style="height: 64px;width: 64px;z-index: 1101;" alt="">
+                    </div>
+                </div>
+                <div style="font-size: 12px;font-weight: bold;text-align: center; margin-top: 10px;">Lorem Lorem</div>
+                <div style="font-size: 12px;font-weight: 400;text-align: center;">Lorem Lorem Lorem</div>
+            </div>
+            <div class="col-5 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                <div class="card w-100 shadow" style="min-height: 200px;">
+                    <i class="fa-solid fa-quote-left text-center mt-3" style="font-size: 45px; color: #ccc;"></i>
+                    <div class="card-body" style="font-size: 12px;z-index: 1100;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum quasi ab quidem
+                        reprehenderit eaque, veritatis facere quo rem recusandae vero reiciendis quos distinctio quas
+                        voluptas autem et quaerat! Perspiciatis.
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center" style="margin-top: -32px;">
+                    <div class="d-flex align-items-center justify-content-center w-100"> 
+                        <img src="assets/42.png" class="bg-dark rounded-circle shadow" style="height: 64px;width: 64px;z-index: 1101;" alt="">
+                    </div>
+                </div>
+                <div style="font-size: 12px;font-weight: bold;text-align: center; margin-top: 10px;">Lorem Lorem</div>
+                        <div style="font-size: 12px;font-weight: 400;text-align: center;">Lorem Lorem Lorem</div>
+            </div>
+        </div>
+    </div> -->
+
+<swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [slidesPerView]="1" [coverflowEffect]="{
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: false
+    }" [autoplay]="{
+        delay: 10000,
+        disableOnInteraction: false
+      }" [breakpoints]="{
+        '768': {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },
+        '1080': {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+        '1360': {
+          slidesPerView: 3,
+          spaceBetween: 0
+        }
+      }" class="mySwiper">
+    <ng-template swiperSlide *ngFor="let card of cards">
+        <div class="my-3 card-customer">
+            <div class="card card-focus shadow pb-5">
+                <div class="d-flex justify-content-center">
+                    <i class="fa-solid fa-quote-left text-center mt-3" style="font-size: 45px; color: #ccc;"></i>
+                </div>
+                <div class="card-body rounded-top" style="font-size: 12px;">{{card.content}}</div>
+            </div>
+            <div class="d-flex justify-content-center" style="margin-top: -30px;">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img [src]="card.img" class="bg-dark rounded-circle shadow"
+                        style="height: 60px;width: 60px;z-index: 1101;" alt="">
+                </div>
+            </div>
+            <div style="font-size: 12px;font-weight: bold;text-align: center;">{{card.desig}}</div>
+            <!-- <div style="font-size: 12px;font-weight: 400;text-align: center;">{{card.desig}}</div> -->
+        </div>
+    </ng-template>
+</swiper>

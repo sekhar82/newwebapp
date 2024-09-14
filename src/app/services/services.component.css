@@ -1,0 +1,22 @@
+.bg-v-green-l {
+    background-color: #B0D52F;
+}
+
+.border-v-green-l {
+    border: 3px solid #B0D52F;
+}
+
+.icon-str {
+    font-size: 150px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.group-bottom-border {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}

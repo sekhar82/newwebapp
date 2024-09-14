@@ -1,0 +1,199 @@
+.bg-v-green::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn-align {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+.card-1 :hover {
+  background-color: #B0D52F;
+  border-radius: 5px;
+  color: #fff;
+  /* animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)  */
+  /* transition: 0.3s; */
+}
+.grow { 
+  transition: scale 300ms ease-in-out;
+}
+.grow:hover { scale:1.1;
+  }
+
+.card-2:hover {
+  background-color: #B0D52F;
+  color: #fff;
+}
+
+.fa-brands:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.card-body p {
+  font-size: 13px;
+}
+
+/* You can add global styles to this file, and also import other style files */
+.v-green-l {
+  color: #B0D52F;
+}
+
+.bg-v-green-l {
+  background-color: #B0D52F;
+}
+
+.border-v-green-l {
+  border: 3px solid #B0D52F;
+}
+
+.btn-group:hover .btn-hover {
+  background-color: #B0D52F;
+}
+
+.v-green-m {
+  color: #5CBB42;
+}
+
+.bg-v-green-m {
+  background-color: #5CBB42;
+}
+
+.v-green {
+  color: #3CB24A;
+}
+
+.bg-v-green {
+  background-color: #3CB24A;
+}
+
+.bg-v-lite {
+  background-color: #F8F5FF;
+}
+
+/* .btn-str{
+  position: fixed;
+  top: 50%;
+  right: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+span.r-text{
+  position: relative;
+  height: 20px;
+  width: 80px;
+  transform: rotate(90deg);
+} */
+
+.btn-outline-secondary {
+  --bs-btn-color: #6c757d;
+  --bs-btn-border-color: green;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #B0D52F;
+  --bs-btn-hover-border-color: #B0D52F;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6c757d;
+  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
+
+.btn-outline-success {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #B0D52F;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #B0D52F;
+  --bs-btn-hover-border-color: #B0D52F;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #B0D52F;
+  --bs-btn-active-border-color: #B0D52F;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #B0D52F;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #B0D52F;
+  --bs-gradient: none;
+}
+
+.btn-success {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #B0D52F;
+  --bs-btn-border-color: #B0D52F;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3CB24A;
+  --bs-btn-hover-border-color: #3CB24A;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #3CB24A;
+  --bs-btn-active-border-color: #3CB24A;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #B0D52F;
+  --bs-btn-disabled-border-color: #B0D52F;
+}
+
+.bg-img-res0 {
+  background-image: url(/assets/slide0.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-img-res1 {
+  background-image: url(/assets/slide1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-img-res2 {
+  background-image: url(/assets/slide2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-img-res3 {
+  background-image: url(/assets/slide3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

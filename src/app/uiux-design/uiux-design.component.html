@@ -1,0 +1,144 @@
+<div class="container">
+    <div class="rounded-4 shadow" style="background-image: linear-gradient(to bottom right, #D0D3FA, #fff);">
+        <div class="row flex-sm-row-reverse py-3">
+            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 row justify-content-center">
+                <!-- <div class="col-10 col-sm-10 col-md-8"> -->
+                <img src="assets/Artboard 1 2.png" class="img-fluid " alt="">
+                <!-- </div> -->
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 row justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="ms-3">
+                        <p class="fs-1 mb-2 fw-bold">UI & UX Design</p>
+                        <p class="pb-3 text-muted">Unleashing the Power of Design and Business Fusion
+                            Rapid, Exquisite UI/UX Experiences</p>
+                        <button class="btn btn-lg bg-v-green-l rounded-0 border border-v-green-l" data-bs-toggle="modal"
+                            data-bs-target="#getInTouch">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p class="text-center fs-2 mt-5">Delight users and drive conversions with our exceptional
+        UI/UX design expertise.</p>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <p class="text-center text-muted">Ignite engagement with our exceptional UI/UX design expertise.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-6 py-2" *ngFor="let elm of cards">
+            <div class="card w-100 card-1 shadow cur-poiter h-100">
+                <div class="card-body mx-2">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center"
+                        style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                        <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                    </div>
+                    <p class="fw-bold pt-2">{{elm.name}}</p>
+                    <p class="text-muted" style="font-size: 13px;">{{elm.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light py-5 my-5">
+    <div class="container">
+        <ul class="nav mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <div class="nav-link active fs-2 fw-bolder text-muted" style="cursor: pointer;" id="pills-home-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                    aria-selected="true">Insight Mining</div>
+            </li>
+            <li class="nav-item" role="presentation">
+                <div class="nav-link fs-2 fw-bolder text-muted" style="cursor: pointer;" id="pills-profile-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Artistry</div>
+            </li>
+            <li class="nav-item" role="presentation">
+                <div class="nav-link fs-2 fw-bolder text-muted" style="cursor: pointer;" id="pills-contact-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Innovate</div>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12 col-md-8 text-start fs-2">
+                        Empowering Success through Actionable Data
+                        Unleashing User Voices Aligned with
+                        Business Objectives.
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-4">
+                    <div class="col-sm-12 col-md-6 py-2" *ngFor="let elm of cards1">
+                        <div class="card w-100 card-1 shadow cur-poiter h-100">
+                            <div class="card-body mx-2">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                                    style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                                    <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                                </div>
+                                <p class="fw-bold pt-2">{{elm.name}}</p>
+                                <p class="text-muted" style="font-size: 13px;">{{elm.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12 col-md-8 text-start fs-2">
+                        Design as a Collaborative Endeavour, Harnessing
+                        Stakeholder Insights for Successful and
+                        Scalable Solutions.
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-4">
+                    <div class="col-sm-12 col-md-6 py-2" *ngFor="let elm of cards2">
+                        <div class="card w-100 card-1 shadow cur-poiter h-100">
+                            <div class="card-body mx-2">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                                    style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                                    <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                                </div>
+                                <p class="fw-bold pt-2">{{elm.name}}</p>
+                                <p class="text-muted" style="font-size: 13px;">{{elm.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12 col-md-8 text-start fs-2">
+                        Transforming Diverse Designs into Functional
+                        Websites, Mobile Apps, and
+                        Enterprise Solutions
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-4">
+                    <div class="col-sm-12 col-md-6 py-2" *ngFor="let elm of cards3">
+                        <div class="card w-100 card-1 shadow cur-poiter h-100">
+                            <div class="card-body mx-2">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                                    style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                                    <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                                </div>
+                                <p class="fw-bold pt-2">{{elm.name}}</p>
+                                <p class="text-muted" style="font-size: 13px;">{{elm.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-lets-talk-form></app-lets-talk-form>
+<app-book-call [title]="'Connect with Our Design Guru'"></app-book-call>

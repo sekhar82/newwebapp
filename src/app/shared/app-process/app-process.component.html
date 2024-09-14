@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-between align-items-center">
+    <i class="fa-solid fa-circle-chevron-left fs-5 pe-2 text-secondary" style="cursor: pointer;" (click)="slidePrev()"></i>
+    <swiper [slidesPerView]="1" [spaceBetween]="30"
+    #swiper [virtual]="true"
+    [pagination]="{
+        clickable: true
+      }" [autoplay]="{
+          delay: 2000,
+          disableOnInteraction: false
+        }" [navigation]="true" [breakpoints]="{
+            '768': {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            '1080': {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            '1360': {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+        }" class="mySwiper">
+        <ng-template swiperSlide *ngFor="let elm of cards;let i = index" class="mb-5 mt-3 bg-light">
+            <div class="card w-100 card-1 shadow cur-poiter my-2">
+                <div class="card-body mx-2" style="height: 250px;">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center"
+                        style="background-image: linear-gradient(#98CE34, #3CB24A);height: 100px;width: 100px;">
+                        <img [src]="elm.icon" style="max-height: 65px;max-width: 65px;" alt="">
+                    </div>
+                    <p class="fw-bold pt-2 text-start">{{elm.name}}</p>
+                    <p class="text-muted text-start" style="font-size: 13px;">{{elm.description}}</p>
+    
+                </div>
+            </div>
+            <div>
+            </div>
+        </ng-template>
+    </swiper>
+    <i class="fa-solid fa-circle-chevron-right fs-5 ps-2 text-secondary" style="cursor: pointer;" (click)="slideNext()"></i>
+</div>

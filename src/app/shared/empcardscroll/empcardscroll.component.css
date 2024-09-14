@@ -1,0 +1,85 @@
+.bg-v-green-l{
+    background-color: #B0D52F;
+  }
+  /* @media only screen and (max-width: 991px) {
+    @keyframes moveSlideshow {
+        from { 
+          transform: translateX(30%);  
+        }
+        to {
+            transform: translateX(-800%);
+        }
+      }
+}
+@media only screen and (min-width: 992px) {
+  @keyframes moveSlideshow {
+    from { 
+      transform: translateX(30%);  
+    }
+     to {
+        transform: translateX(-470%);
+    } 
+  }
+}
+@media only screen and (max-width: 991px) {
+    @keyframes moveSlideshowReverse {
+        from { 
+          transform: translateX(-800%);  
+        }
+        to {
+            transform: translateX(30%);
+        }
+      }
+}
+@media only screen and (min-width: 992px) {
+  @keyframes moveSlideshowReverse {
+    from { 
+      transform: translateX(-470%);  
+    }
+     to {
+        transform: translateX(30%);
+    } 
+  }
+}
+ .left-right{
+    animation: moveSlideshow 20s linear infinite;
+  }
+  .right-left{
+    animation: moveSlideshowReverse 20s linear infinite;
+  } */
+
+  
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
