@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
   providedIn: 'root'
 })
 export class ShareService {
-  private client = new SESv2Client({ region: "us-east-2", credentials: { accessKeyId: 'AKIARVGZDK3OYJGNPUGP', secretAccessKey: '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' } });
+  private client = new SESv2Client({ region: "us-east-2", credentials: { accessKeyId: '', secretAccessKey: '' } });
   constructor(private toast: ToastrService) { }
 
 
